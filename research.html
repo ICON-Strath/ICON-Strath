@@ -2,36 +2,262 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Research | ICON Research Team | VER 3</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/style.css?v=3">
+    <title>Research | ICON Research Team | VER 8</title>
+
+    <link rel="stylesheet" href="./css/style.css?v=8">
+
+
+    <style>
+
+        /* =========================
+           Research Page
+        ========================= */
+
+        .research-vision {
+            max-width: 980px;
+
+            font-size: 17px;
+
+            line-height: 1.9;
+        }
+
+
+        .research-vision p {
+            margin-bottom: 24px;
+        }
+
+
+        .topic-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 36px;
+
+            margin-top: 35px;
+        }
+
+
+        .topic-card {
+            background: #ffffff;
+
+            border: 1px solid #e5e7eb;
+
+            border-radius: 10px;
+
+            overflow: hidden;
+
+            transition:
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+
+
+        .topic-card:hover {
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 14px 35px
+                rgba(0,0,0,0.08);
+        }
+
+
+        .topic-card img {
+            width: 100%;
+
+            height: 300px;
+
+            object-fit: cover;
+
+            display: block;
+        }
+
+
+        .topic-content {
+            padding: 28px;
+        }
+
+
+        .topic-number {
+            color: #1565b8;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            letter-spacing: 1.5px;
+        }
+
+
+        .topic-content h3 {
+            margin: 7px 0 15px;
+
+            font-size: 25px;
+
+            color: #12376b;
+        }
+
+
+        .topic-content p {
+            margin: 0;
+
+            line-height: 1.7;
+
+            color: #5b6472;
+        }
+
+
+        .research-platform {
+            margin-top: 90px;
+
+            padding-top: 65px;
+
+            border-top: 1px solid #e5e7eb;
+        }
+
+
+        .platform-layout {
+            display: grid;
+
+            grid-template-columns:
+                1.1fr 0.9fr;
+
+            gap: 45px;
+
+            align-items: center;
+
+            margin-top: 30px;
+        }
+
+
+        .platform-layout img {
+            width: 100%;
+
+            border-radius: 10px;
+
+            display: block;
+        }
+
+
+        .platform-text h3 {
+            font-size: 27px;
+
+            margin-top: 0;
+
+            color: #12376b;
+        }
+
+
+        .platform-list {
+            margin-top: 20px;
+
+            padding-left: 20px;
+
+            color: #4b5563;
+        }
+
+
+        .platform-list li {
+            margin-bottom: 9px;
+        }
+
+
+        .secondary-platform {
+            margin-top: 40px;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 30px;
+        }
+
+
+        .secondary-platform img {
+            width: 100%;
+
+            height: 270px;
+
+            object-fit: cover;
+
+            border-radius: 10px;
+
+            display: block;
+        }
+
+
+        @media (max-width: 850px) {
+
+            .topic-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .platform-layout {
+                grid-template-columns: 1fr;
+            }
+
+
+            .secondary-platform {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
 </head>
 
+
+
 <body>
+
 
 <header>
 
     <div class="logo">
+
         <a href="./index.html">
-            <img src="./images/logo/logo.png" alt="ICON Research Team">
+
+            <img
+                src="./images/logo/logo.png"
+                alt="ICON Research Team">
+
         </a>
+
     </div>
 
+
     <nav>
+
         <a href="./index.html">Home</a>
+
         <a href="./research.html">Research</a>
+
         <a href="./people.html">People</a>
+
         <a href="#">Publications</a>
+
         <a href="#">Projects</a>
+
         <a href="#">Facilities</a>
+
         <a href="#">News</a>
+
         <a href="./contact.html">Contact</a>
+
     </nav>
 
 </header>
+
 
 
 <section class="page-header">
@@ -39,74 +265,330 @@
     <h1>Research</h1>
 
     <p>
-        Power electronics and drive technologies for sustainable electrification.
+        Advanced power electronics,
+        electrified transportation,
+        and intelligent control.
     </p>
 
 </section>
+
 
 
 <section class="section">
 
     <div class="container">
 
-        <h2>Research Vision</h2>
 
-        <p>
-            Depending on the resources used to generate electricity,
-            electrification can reduce carbon dioxide (CO₂) emissions
-            from the transportation, building, and industrial sectors.
-            Addressing emissions from these sectors is critical to
-            decarbonizing the economy and, ultimately, mitigating the
-            impacts of climate change.
-        </p>
-
-        <p>
-            Our team aims to develop electrification technologies for
-            transportation applications, including EV and aerospace
-            motor control, wireless power transfer, DC–DC converters,
-            and related power electronic systems.
-        </p>
-
-        <p>
-            The long-term goal of our team is to develop highly efficient,
-            renewable, and sustainable energy technologies that can
-            contribute to replacing conventional fossil-fuel-based
-            energy sources, including coal, oil, and natural gas.
+        <p style="
+            display:inline-block;
+            background:#ffeaa7;
+            padding:6px 12px;
+            font-weight:bold;
+            margin-bottom:30px;
+        ">
+            RESEARCH PAGE · VER 8
         </p>
 
 
-        <h2 style="margin-top:55px;">
+
+        <!-- Research Vision -->
+
+        <div class="research-vision">
+
+
+            <h2>
+                Research Vision
+            </h2>
+
+
+            <p>
+
+                Depending on the resources used to generate electricity,
+                electrification can reduce carbon dioxide (CO₂) emissions
+                from the transportation, building, and industrial sectors.
+                Addressing emissions from these sectors is critical to
+                decarbonizing the economy and, ultimately, mitigating the
+                impacts of climate change.
+
+            </p>
+
+
+            <p>
+
+                Our team aims to develop the electrification of transportation
+                applications, including EV and aerospace motor control,
+                wireless power transfer, DC–DC converters, advanced power
+                converters, and intelligent control technologies.
+
+            </p>
+
+
+            <p>
+
+                The ultimate goal of our team is to develop highly efficient,
+                renewable, and sustainable energy technologies that can
+                contribute to replacing conventional fossil fuels,
+                including coal, oil, and natural gas.
+
+            </p>
+
+
+        </div>
+
+
+
+        <!-- Research Topics -->
+
+        <h2 style="margin-top:70px;">
             Research Areas
         </h2>
 
-        <div class="grid grid-4">
 
-            <div class="card">
-                <h3>EV & Aerospace Motor Control</h3>
+        <div class="topic-grid">
+
+
+            <!-- Topic 01 -->
+
+            <div class="topic-card">
+
+                <img
+                    src="./images/facilities/ev.jpg"
+                    alt="EV and Aerospace Motor Control">
+
+                <div class="topic-content">
+
+                    <div class="topic-number">
+                        RESEARCH AREA 01
+                    </div>
+
+                    <h3>
+                        EV & Aerospace Motor Control
+                    </h3>
+
+                    <p>
+
+                        Advanced motor-drive technologies for electric
+                        vehicles and aerospace electrification, including
+                        high-performance machine control, sensorless
+                        operation, predictive control, and electrified
+                        propulsion systems.
+
+                    </p>
+
+                </div>
+
             </div>
 
-            <div class="card">
-                <h3>Power Converters</h3>
+
+
+            <!-- Topic 02 -->
+
+            <div class="topic-card">
+
+                <img
+                    src="./images/facilities/Platform.png"
+                    alt="Modular Multilevel Converters">
+
+                <div class="topic-content">
+
+                    <div class="topic-number">
+                        RESEARCH AREA 02
+                    </div>
+
+                    <h3>
+                        Modular Multilevel Converters
+                    </h3>
+
+                    <p>
+
+                        Power-dense modular multilevel converter technologies
+                        for advanced motor drives, focusing on modulation,
+                        energy management, capacitor-voltage control,
+                        circulating-current control, and high-performance
+                        converter hardware.
+
+                    </p>
+
+                </div>
+
             </div>
 
-            <div class="card">
-                <h3>Wireless Power Transfer</h3>
+
+
+            <!-- Topic 03 -->
+
+            <div class="topic-card">
+
+                <img
+                    src="./images/facilities/converter.jpg"
+                    alt="Wide-Bandgap Power Electronics">
+
+                <div class="topic-content">
+
+                    <div class="topic-number">
+                        RESEARCH AREA 03
+                    </div>
+
+                    <h3>
+                        Wide-Bandgap Power Electronics
+                    </h3>
+
+                    <p>
+
+                        High-frequency and high-power-density converter
+                        technologies based on GaN and SiC semiconductor
+                        devices, with emphasis on converter hardware,
+                        switching performance, thermal design, and
+                        system-level integration.
+
+                    </p>
+
+                </div>
+
             </div>
 
-            <div class="card">
-                <h3>Advanced Control</h3>
+
+
+            <!-- Topic 04 -->
+
+            <div class="topic-card">
+
+                <img
+                    src="./images/facilities/control.png"
+                    alt="Advanced Control">
+
+                <div class="topic-content">
+
+                    <div class="topic-number">
+                        RESEARCH AREA 04
+                    </div>
+
+                    <h3>
+                        Advanced Control
+                    </h3>
+
+                    <p>
+
+                        Advanced control methods for power converters
+                        and electrical machines, including model
+                        predictive control, model-free control,
+                        sensorless control, grid-forming control,
+                        and advanced modulation techniques.
+
+                    </p>
+
+                </div>
+
             </div>
+
 
         </div>
+
+
+
+        <!-- Research Platform -->
+
+        <div class="research-platform">
+
+
+            <h2>
+                Research Platform
+            </h2>
+
+
+            <div class="platform-layout">
+
+
+                <div>
+
+                    <img
+                        src="./images/facilities/controller.jpg"
+                        alt="Power Electronics Experimental Platform">
+
+                </div>
+
+
+                <div class="platform-text">
+
+                    <h3>
+                        Experimental Power Electronics Platform
+                    </h3>
+
+                    <p>
+
+                        The research team maintains experimental platforms
+                        for power converter development, electrical-machine
+                        control, and advanced modulation and control research.
+
+                    </p>
+
+
+                    <ul class="platform-list">
+
+                        <li>
+                            Imperix B-Box real-time control platforms
+                        </li>
+
+                        <li>
+                            GaN and SiC power converter prototypes
+                        </li>
+
+                        <li>
+                            Modular multilevel converter test benches
+                        </li>
+
+                        <li>
+                            PMSM motor-drive test benches
+                        </li>
+
+                        <li>
+                            Programmable DC power supplies and electronic loads
+                        </li>
+
+                        <li>
+                            High-bandwidth measurement and oscilloscope systems
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="secondary-platform">
+
+
+                <img
+                    src="./images/facilities/ev1.jpg"
+                    alt="Motor Drive Experimental Platform">
+
+
+                <img
+                    src="./images/facilities/Platform.png"
+                    alt="MMC Experimental Platform">
+
+
+            </div>
+
+
+        </div>
+
 
     </div>
 
 </section>
 
 
+
 <footer>
-    ICON Research Team · VER 3
+
+    ICON Research Team · VER 8
+
 </footer>
+
 
 </body>
 
