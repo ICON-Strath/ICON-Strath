@@ -2,99 +2,322 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ICON Research Team | VER 10</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/style.css?v=10">
+    <title>ICON Research Team | VER 11</title>
+
+    <link rel="stylesheet" href="./css/style.css?v=11">
+
+    <style>
+
+        /* =========================
+           Home Hero
+        ========================= */
+
+        .home-hero {
+            background: #f4f7fb;
+            padding: 85px 6%;
+        }
+
+        .home-hero-layout {
+            max-width: 1500px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+
+            gap: 70px;
+            align-items: center;
+        }
+
+        .home-hero-text h1 {
+            margin: 20px 0 28px;
+
+            font-size: 60px;
+            line-height: 1.12;
+
+            color: #12376b;
+        }
+
+        .home-hero-text p {
+            font-size: 19px;
+            line-height: 1.9;
+
+            color: #4b5563;
+        }
+
+        .eyebrow {
+            color: #1565b8;
+
+            font-size: 14px;
+            font-weight: 700;
+
+            letter-spacing: 2.5px;
+        }
+
+        .home-hero-image img {
+            width: 100%;
+            display: block;
+
+            border-radius: 10px;
+        }
+
+
+        /* =========================
+           Research Cards
+        ========================= */
+
+        .home-research-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 28px;
+        }
+
+        .home-research-card {
+            padding: 35px;
+
+            min-height: 285px;
+
+            border: 1px solid #e5e7eb;
+
+            border-radius: 8px;
+
+            background: #ffffff;
+        }
+
+        .home-research-number {
+            color: #16a34a;
+
+            font-weight: 700;
+
+            margin-bottom: 35px;
+        }
+
+        .home-research-card h3 {
+            color: #12376b;
+
+            font-size: 21px;
+
+            margin-bottom: 17px;
+        }
+
+        .home-research-card p {
+            color: #6b7280;
+
+            line-height: 1.7;
+        }
+
+
+        /* =========================
+           Strathclyde
+        ========================= */
+
+        .strath-section {
+            background: #f4f7fb;
+        }
+
+        .strath-layout {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 55px;
+
+            align-items: center;
+        }
+
+        .strath-layout img {
+            width: 100%;
+
+            display: block;
+
+            border-radius: 10px;
+        }
+
+        .strath-text h2 {
+            font-size: 34px;
+
+            color: #12376b;
+        }
+
+        .strath-text p {
+            line-height: 1.85;
+        }
+
+
+        .strath-secondary {
+            margin-top: 45px;
+        }
+
+        .strath-secondary img {
+            width: 100%;
+
+            max-height: 480px;
+
+            object-fit: cover;
+
+            display: block;
+
+            border-radius: 10px;
+        }
+
+
+        @media (max-width: 1000px) {
+
+            .home-hero-layout,
+            .strath-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .home-research-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+
+        @media (max-width: 650px) {
+
+            .home-hero-text h1 {
+                font-size: 40px;
+            }
+
+            .home-research-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
 </head>
 
+
+
 <body>
+
 
 <header>
 
     <div class="logo">
+
         <a href="./index.html">
-            <img src="./images/logo/logo.png" alt="ICON Research Team">
+
+            <img
+                src="./images/logo/logo.png"
+                alt="ICON Research Team">
+
         </a>
+
     </div>
 
+
     <nav>
+
         <a href="./index.html">Home</a>
         <a href="./research.html">Research</a>
         <a href="./people.html">People</a>
+
         <a href="#">Publications</a>
         <a href="#">Projects</a>
         <a href="#">Facilities</a>
         <a href="#">News</a>
+
         <a href="./contact.html">Contact</a>
+
     </nav>
 
 </header>
 
 
-<section class="hero">
 
-    <div class="hero-content">
+<!-- =========================
+     HERO
+========================= -->
 
-        <p style="
-            display:inline-block;
-            background:#ffeaa7;
-            padding:6px 12px;
-            font-weight:bold;
-            margin-bottom:20px;
-        ">
-            HOME · VER 10
-        </p>
+<section class="home-hero">
 
-        <h1>
-            Intelligent Power Converter Research Team
-        </h1>
+    <div class="home-hero-layout">
 
-        <p>
-            Our team develops advanced power electronics and drive
-            technologies for transportation electrification, with
-            research spanning electric and aerospace propulsion,
-            modular multilevel converters, wide-bandgap power electronics,
-            and advanced control.
-        </p>
+
+        <div class="home-hero-text">
+
+            <div class="eyebrow">
+                UNIVERSITY OF STRATHCLYDE
+            </div>
+
+            <h1>
+                Intelligent Power Converter Research Team
+            </h1>
+
+            <p>
+                Our team develops advanced power electronics and drive
+                technologies for transportation electrification, with
+                research spanning electric and aerospace propulsion,
+                modular multilevel converters, wide-bandgap power electronics,
+                and advanced control.
+            </p>
+
+            <p style="
+                display:inline-block;
+                background:#ffeaa7;
+                padding:6px 12px;
+                font-weight:bold;
+                margin-top:20px;
+            ">
+                HOME · VER 11
+            </p>
+
+        </div>
+
+
+        <div class="home-hero-image">
+
+            <img
+                src="./images/facilities/Strath.jpg"
+                alt="University of Strathclyde">
+
+        </div>
+
 
     </div>
 
 </section>
 
 
+
+<!-- =========================
+     RESEARCH AREAS
+========================= -->
+
 <section class="section">
 
     <div class="container">
 
-        <p style="
-            color:#1565b8;
-            font-size:14px;
-            font-weight:700;
-            letter-spacing:2px;
-            margin-bottom:8px;
-        ">
+        <div class="eyebrow">
             WHAT WE DO
-        </p>
+        </div>
 
         <h2>
             Research Areas
         </h2>
 
 
-        <div class="grid grid-4">
+        <div class="home-research-grid">
 
 
-            <div class="card">
+            <div class="home-research-card">
 
-                <p style="
-                    color:#16a34a;
-                    font-weight:700;
-                ">
+                <div class="home-research-number">
                     01
-                </p>
+                </div>
 
                 <h3>
                     EV & Aerospace Motor Control
@@ -109,36 +332,32 @@
             </div>
 
 
-            <div class="card">
 
-                <p style="
-                    color:#16a34a;
-                    font-weight:700;
-                ">
+            <div class="home-research-card">
+
+                <div class="home-research-number">
                     02
-                </p>
+                </div>
 
                 <h3>
                     Modular Multilevel Converters
                 </h3>
 
                 <p>
-                    Advanced MMC topologies, modulation, control,
-                    and high-power-density converter technologies
-                    for motor-drive applications.
+                    Advanced MMC topologies, modulation,
+                    control, and high-power-density converter
+                    technologies for motor-drive applications.
                 </p>
 
             </div>
 
 
-            <div class="card">
 
-                <p style="
-                    color:#16a34a;
-                    font-weight:700;
-                ">
+            <div class="home-research-card">
+
+                <div class="home-research-number">
                     03
-                </p>
+                </div>
 
                 <h3>
                     Wide-Bandgap Power Electronics
@@ -152,22 +371,20 @@
             </div>
 
 
-            <div class="card">
 
-                <p style="
-                    color:#16a34a;
-                    font-weight:700;
-                ">
+            <div class="home-research-card">
+
+                <div class="home-research-number">
                     04
-                </p>
+                </div>
 
                 <h3>
                     Advanced Control
                 </h3>
 
                 <p>
-                    Predictive, sensorless, model-free,
-                    and intelligent control for electrical machines
+                    Predictive, sensorless, model-free and
+                    intelligent control for electrical machines
                     and power electronic systems.
                 </p>
 
@@ -181,42 +398,75 @@
 </section>
 
 
-<section class="section" style="background:#f4f7fb;">
+
+<!-- =========================
+     UNIVERSITY
+========================= -->
+
+<section class="section strath-section">
 
     <div class="container">
 
-        <h2>
-            University of Strathclyde
-        </h2>
 
-        <p>
-            The University of Strathclyde is located in Glasgow,
-            the largest city in Scotland. Its Department of Electronic
-            and Electrical Engineering is one of the oldest and largest
-            of its kind in the UK.
-        </p>
+        <div class="strath-layout">
 
-        <p>
-            The research group is part of the Institute for Energy and
-            Environment, with internationally recognised research in
-            power systems, power electronics, electrical machines,
-            and sustainable energy technologies.
-        </p>
 
-        <p>
-            The Department and Institute maintain extensive international
-            collaborations with universities and research institutions
-            worldwide.
-        </p>
+            <div>
+
+                <img
+                    src="./images/facilities/12.jpg"
+                    alt="University of Strathclyde">
+
+            </div>
+
+
+            <div class="strath-text">
+
+                <div class="eyebrow">
+                    OUR UNIVERSITY
+                </div>
+
+                <h2>
+                    University of Strathclyde
+                </h2>
+
+                <p>
+                    The University of Strathclyde is located in Glasgow,
+                    the largest city in Scotland. Its Department of Electronic
+                    and Electrical Engineering is one of the oldest and largest
+                    of its kind in the UK.
+                </p>
+
+                <p>
+                    The research group is part of the Institute for Energy
+                    and Environment, with internationally recognised research
+                    in power systems, power electronics, electrical machines,
+                    and sustainable energy technologies.
+                </p>
+
+                <p>
+                    The Department and Institute maintain extensive
+                    international collaborations with universities
+                    and research institutions worldwide.
+                </p>
+
+            </div>
+
+
+        </div>
 
     </div>
 
 </section>
 
 
+
 <footer>
-    ICON Research Team · VER 10
+
+    ICON Research Team · VER 11
+
 </footer>
+
 
 </body>
 
