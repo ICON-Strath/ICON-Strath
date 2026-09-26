@@ -8,49 +8,34 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>ICON Research Team | VER 11</title>
+    <title>ICON Research Team | VER 12</title>
 
-    <link rel="stylesheet" href="./css/style.css?v=11">
+    <link rel="stylesheet" href="./css/style.css?v=12">
+
 
     <style>
 
         /* =========================
-           Home Hero
+           Home Hero Layout
         ========================= */
 
         .home-hero {
             background: #f4f7fb;
-            padding: 85px 6%;
+            padding: 70px 6%;
         }
 
         .home-hero-layout {
-            max-width: 1500px;
-            margin: auto;
+            max-width: 1450px;
+            margin: 0 auto;
 
             display: grid;
-            grid-template-columns: 0.9fr 1.1fr;
+            grid-template-columns: 0.95fr 1.05fr;
 
-            gap: 70px;
+            gap: 60px;
             align-items: center;
         }
 
-        .home-hero-text h1 {
-            margin: 20px 0 28px;
-
-            font-size: 60px;
-            line-height: 1.12;
-
-            color: #12376b;
-        }
-
-        .home-hero-text p {
-            font-size: 19px;
-            line-height: 1.9;
-
-            color: #4b5563;
-        }
-
-        .eyebrow {
+        .home-eyebrow {
             color: #1565b8;
 
             font-size: 14px;
@@ -59,8 +44,26 @@
             letter-spacing: 2.5px;
         }
 
+        .home-title {
+            margin: 18px 0 24px;
+
+            font-size: 56px;
+            line-height: 1.12;
+
+            color: #12376b;
+        }
+
+        .home-intro {
+            font-size: 20px;
+
+            line-height: 1.85;
+
+            color: #4b5563;
+        }
+
         .home-hero-image img {
             width: 100%;
+
             display: block;
 
             border-radius: 10px;
@@ -68,7 +71,7 @@
 
 
         /* =========================
-           Research Cards
+           Research Area Cards
         ========================= */
 
         .home-research-grid {
@@ -81,11 +84,11 @@
         }
 
         .home-research-card {
-            padding: 35px;
+            min-height: 270px;
 
-            min-height: 285px;
+            padding: 32px;
 
-            border: 1px solid #e5e7eb;
+            border: 1px solid #e1e6ec;
 
             border-radius: 8px;
 
@@ -95,28 +98,34 @@
         .home-research-number {
             color: #16a34a;
 
+            font-size: 16px;
+
             font-weight: 700;
 
-            margin-bottom: 35px;
+            margin-bottom: 30px;
         }
 
         .home-research-card h3 {
+            margin: 0 0 15px;
+
+            font-size: 22px;
+
             color: #12376b;
-
-            font-size: 21px;
-
-            margin-bottom: 17px;
         }
 
         .home-research-card p {
-            color: #6b7280;
+            margin: 0;
+
+            font-size: 16px;
 
             line-height: 1.7;
+
+            color: #667085;
         }
 
 
         /* =========================
-           Strathclyde
+           Strathclyde Section
         ========================= */
 
         .strath-section {
@@ -142,6 +151,8 @@
         }
 
         .strath-text h2 {
+            margin-top: 8px;
+
             font-size: 34px;
 
             color: #12376b;
@@ -152,32 +163,54 @@
         }
 
 
-        .strath-secondary {
-            margin-top: 45px;
+        /* =========================
+           Institute Section
+        ========================= */
+
+        .institute-layout {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 55px;
+
+            align-items: center;
         }
 
-        .strath-secondary img {
+        .institute-layout img {
             width: 100%;
-
-            max-height: 480px;
-
-            object-fit: cover;
 
             display: block;
 
             border-radius: 10px;
         }
 
+        .institute-text h2 {
+            font-size: 34px;
 
-        @media (max-width: 1000px) {
+            color: #12376b;
+        }
+
+        .institute-text p {
+            line-height: 1.85;
+        }
+
+
+        /* =========================
+           Responsive
+        ========================= */
+
+        @media (max-width: 1050px) {
 
             .home-hero-layout,
-            .strath-layout {
+            .strath-layout,
+            .institute-layout {
                 grid-template-columns: 1fr;
             }
 
             .home-research-grid {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns:
+                    repeat(2, 1fr);
             }
 
         }
@@ -185,8 +218,12 @@
 
         @media (max-width: 650px) {
 
-            .home-hero-text h1 {
+            .home-title {
                 font-size: 40px;
+            }
+
+            .home-intro {
+                font-size: 18px;
             }
 
             .home-research-grid {
@@ -198,7 +235,6 @@
     </style>
 
 </head>
-
 
 
 <body>
@@ -222,12 +258,17 @@
     <nav>
 
         <a href="./index.html">Home</a>
+
         <a href="./research.html">Research</a>
+
         <a href="./people.html">People</a>
 
         <a href="#">Publications</a>
+
         <a href="#">Projects</a>
+
         <a href="#">Facilities</a>
+
         <a href="#">News</a>
 
         <a href="./contact.html">Contact</a>
@@ -247,32 +288,31 @@
     <div class="home-hero-layout">
 
 
-        <div class="home-hero-text">
+        <div>
 
-            <div class="eyebrow">
+            <div class="home-eyebrow">
                 UNIVERSITY OF STRATHCLYDE
             </div>
 
-            <h1>
+
+            <h1 class="home-title">
                 Intelligent Power Converter Research Team
             </h1>
 
-            <p>
+
+            <p class="home-intro">
+
                 Our team develops advanced power electronics and drive
                 technologies for transportation electrification, with
-                research spanning electric and aerospace propulsion,
-                modular multilevel converters, wide-bandgap power electronics,
-                and advanced control.
+                research spanning EV and aerospace motor control,
+                modular multilevel converters, wide-bandgap power
+                electronics, and advanced control.
+
             </p>
 
-            <p style="
-                display:inline-block;
-                background:#ffeaa7;
-                padding:6px 12px;
-                font-weight:bold;
-                margin-top:20px;
-            ">
-                HOME · VER 11
+
+            <p class="version-badge">
+                HOME · VER 12
             </p>
 
         </div>
@@ -301,9 +341,11 @@
 
     <div class="container">
 
-        <div class="eyebrow">
+
+        <div class="home-eyebrow">
             WHAT WE DO
         </div>
+
 
         <h2>
             Research Areas
@@ -345,8 +387,8 @@
 
                 <p>
                     Advanced MMC topologies, modulation,
-                    control, and high-power-density converter
-                    technologies for motor-drive applications.
+                    control, energy management, and
+                    high-power-density converter technologies.
                 </p>
 
             </div>
@@ -365,7 +407,7 @@
 
                 <p>
                     High-frequency and high-power-density converter
-                    technologies based on GaN and SiC devices.
+                    technologies based on GaN and SiC semiconductor devices.
                 </p>
 
             </div>
@@ -383,9 +425,9 @@
                 </h3>
 
                 <p>
-                    Predictive, sensorless, model-free and
-                    intelligent control for electrical machines
-                    and power electronic systems.
+                    Predictive, sensorless, model-free,
+                    grid-forming, and intelligent control
+                    for electrical machines and power electronic systems.
                 </p>
 
             </div>
@@ -400,7 +442,7 @@
 
 
 <!-- =========================
-     UNIVERSITY
+     UNIVERSITY OF STRATHCLYDE
 ========================= -->
 
 <section class="section strath-section">
@@ -414,7 +456,7 @@
             <div>
 
                 <img
-                    src="./images/facilities/12.jpg"
+                    src="./images/facilities/Strath1.jpg"
                     alt="University of Strathclyde">
 
             </div>
@@ -422,33 +464,102 @@
 
             <div class="strath-text">
 
-                <div class="eyebrow">
+
+                <div class="home-eyebrow">
                     OUR UNIVERSITY
                 </div>
+
 
                 <h2>
                     University of Strathclyde
                 </h2>
 
+
                 <p>
+
                     The University of Strathclyde is located in Glasgow,
                     the largest city in Scotland. Its Department of Electronic
                     and Electrical Engineering is one of the oldest and largest
                     of its kind in the UK.
+
                 </p>
 
+
                 <p>
+
+                    The Department provides a strong research environment
+                    in power electronics, electrical machines, power systems,
+                    energy conversion, and advanced control.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     INSTITUTE / COLLABORATION
+========================= -->
+
+<section class="section">
+
+    <div class="container">
+
+
+        <div class="institute-layout">
+
+
+            <div class="institute-text">
+
+
+                <div class="home-eyebrow">
+                    RESEARCH ENVIRONMENT
+                </div>
+
+
+                <h2>
+                    Institute for Energy and Environment
+                </h2>
+
+
+                <p>
+
                     The research group is part of the Institute for Energy
-                    and Environment, with internationally recognised research
-                    in power systems, power electronics, electrical machines,
-                    and sustainable energy technologies.
+                    and Environment, one of the major power and energy
+                    research institutes in Europe, with internationally
+                    recognised research in power systems, power electronics,
+                    electrical machines, and sustainable energy technologies.
+
                 </p>
 
+
                 <p>
-                    The Department and Institute maintain extensive
-                    international collaborations with universities
-                    and research institutions worldwide.
+
+                    The Institute maintains extensive international
+                    collaborations with universities and research institutions,
+                    supporting joint research, researcher exchange,
+                    and collaborative development in advanced energy
+                    and power-electronic technologies.
+
                 </p>
+
+
+            </div>
+
+
+            <div>
+
+                <img
+                    src="./images/facilities/Strath2.jpg"
+                    alt="Institute for Energy and Environment">
 
             </div>
 
@@ -463,7 +574,7 @@
 
 <footer>
 
-    ICON Research Team · VER 11
+    ICON Research Team · VER 12
 
 </footer>
 
