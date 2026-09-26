@@ -8,51 +8,54 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>Research | ICON Research Team | VER 8</title>
+    <title>Research | ICON Research Team | VER 10</title>
 
-    <link rel="stylesheet" href="./css/style.css?v=8">
+    <link rel="stylesheet" href="./css/style.css?v=10">
 
 
     <style>
 
-        /* =========================
-           Research Page
-        ========================= */
+        /* =====================================
+           Research Vision
+        ===================================== */
 
         .research-vision {
-            max-width: 980px;
-
+            max-width: 1000px;
             font-size: 17px;
-
             line-height: 1.9;
         }
-
 
         .research-vision p {
             margin-bottom: 24px;
         }
 
 
+        /* =====================================
+           Research Topic Grid
+        ===================================== */
+
         .topic-grid {
+
             display: grid;
 
             grid-template-columns:
                 repeat(2, 1fr);
 
-            gap: 36px;
+            gap: 38px;
 
             margin-top: 35px;
         }
 
 
         .topic-card {
-            background: #ffffff;
 
             border: 1px solid #e5e7eb;
 
             border-radius: 10px;
 
             overflow: hidden;
+
+            background: #ffffff;
 
             transition:
                 transform 0.25s ease,
@@ -61,6 +64,7 @@
 
 
         .topic-card:hover {
+
             transform: translateY(-5px);
 
             box-shadow:
@@ -70,9 +74,10 @@
 
 
         .topic-card img {
+
             width: 100%;
 
-            height: 300px;
+            height: 310px;
 
             object-fit: cover;
 
@@ -81,14 +86,16 @@
 
 
         .topic-content {
+
             padding: 28px;
         }
 
 
         .topic-number {
+
             color: #1565b8;
 
-            font-size: 14px;
+            font-size: 13px;
 
             font-weight: 700;
 
@@ -97,7 +104,9 @@
 
 
         .topic-content h3 {
-            margin: 7px 0 15px;
+
+            margin:
+                8px 0 14px;
 
             font-size: 25px;
 
@@ -106,6 +115,7 @@
 
 
         .topic-content p {
+
             margin: 0;
 
             line-height: 1.7;
@@ -114,85 +124,145 @@
         }
 
 
-        .research-platform {
-            margin-top: 90px;
+        /* =====================================
+           Research Platform
+        ===================================== */
 
-            padding-top: 65px;
+        .research-platform {
+
+            margin-top: 95px;
+
+            padding-top: 70px;
 
             border-top: 1px solid #e5e7eb;
         }
 
 
-        .platform-layout {
-            display: grid;
-
-            grid-template-columns:
-                1.1fr 0.9fr;
-
-            gap: 45px;
-
-            align-items: center;
+        .platform-main {
 
             margin-top: 30px;
+
+            border: 1px solid #e5e7eb;
+
+            border-radius: 10px;
+
+            overflow: hidden;
+
+            background: #ffffff;
         }
 
 
-        .platform-layout img {
+        .platform-main img {
+
             width: 100%;
 
-            border-radius: 10px;
+            height: auto;
 
             display: block;
         }
 
 
-        .platform-text h3 {
-            font-size: 27px;
+        .platform-description {
+
+            padding: 32px;
+        }
+
+
+        .platform-description h3 {
 
             margin-top: 0;
+
+            font-size: 27px;
 
             color: #12376b;
         }
 
 
-        .platform-list {
-            margin-top: 20px;
+        .platform-description p {
 
-            padding-left: 20px;
+            max-width: 900px;
 
-            color: #4b5563;
+            line-height: 1.8;
         }
 
 
-        .platform-list li {
-            margin-bottom: 9px;
+        /* =====================================
+           Platform Facility Images
+        ===================================== */
+
+        .facility-title {
+
+            margin-top: 55px;
         }
 
 
-        .secondary-platform {
-            margin-top: 40px;
+        .facility-grid {
 
             display: grid;
 
             grid-template-columns:
                 repeat(2, 1fr);
 
-            gap: 30px;
+            gap: 32px;
+
+            margin-top: 30px;
         }
 
 
-        .secondary-platform img {
-            width: 100%;
+        .facility-card {
 
-            height: 270px;
-
-            object-fit: cover;
+            border: 1px solid #e5e7eb;
 
             border-radius: 10px;
+
+            overflow: hidden;
+
+            background: #ffffff;
+        }
+
+
+        .facility-card img {
+
+            width: 100%;
+
+            height: 330px;
+
+            object-fit: cover;
 
             display: block;
         }
 
+
+        .facility-content {
+
+            padding: 24px 26px;
+        }
+
+
+        .facility-content h3 {
+
+            margin:
+                0 0 8px;
+
+            color: #12376b;
+
+            font-size: 21px;
+        }
+
+
+        .facility-content p {
+
+            margin: 0;
+
+            line-height: 1.7;
+
+            color: #5b6472;
+        }
+
+
+        /* =====================================
+           Responsive
+        ===================================== */
 
         @media (max-width: 850px) {
 
@@ -200,13 +270,7 @@
                 grid-template-columns: 1fr;
             }
 
-
-            .platform-layout {
-                grid-template-columns: 1fr;
-            }
-
-
-            .secondary-platform {
+            .facility-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -262,7 +326,9 @@
 
 <section class="page-header">
 
-    <h1>Research</h1>
+    <h1>
+        Research
+    </h1>
 
     <p>
         Advanced power electronics,
@@ -286,15 +352,16 @@
             font-weight:bold;
             margin-bottom:30px;
         ">
-            RESEARCH PAGE · VER 8
+            RESEARCH · VER 10
         </p>
 
 
 
-        <!-- Research Vision -->
+        <!-- =====================================
+             Research Vision
+        ====================================== -->
 
         <div class="research-vision">
-
 
             <h2>
                 Research Vision
@@ -316,7 +383,7 @@
             <p>
 
                 Our team aims to develop the electrification of transportation
-                applications, including EV and aerospace motor control,
+                applications, which includes EV and aerospace motor control,
                 wireless power transfer, DC–DC converters, advanced power
                 converters, and intelligent control technologies.
 
@@ -332,14 +399,15 @@
 
             </p>
 
-
         </div>
 
 
 
-        <!-- Research Topics -->
+        <!-- =====================================
+             Research Areas
+        ====================================== -->
 
-        <h2 style="margin-top:70px;">
+        <h2 style="margin-top:75px;">
             Research Areas
         </h2>
 
@@ -347,7 +415,7 @@
         <div class="topic-grid">
 
 
-            <!-- Topic 01 -->
+            <!-- 01 EV -->
 
             <div class="topic-card">
 
@@ -381,7 +449,7 @@
 
 
 
-            <!-- Topic 02 -->
+            <!-- 02 MMC -->
 
             <div class="topic-card">
 
@@ -401,11 +469,11 @@
 
                     <p>
 
-                        Power-dense modular multilevel converter technologies
-                        for advanced motor drives, focusing on modulation,
+                        Modular multilevel converter technologies for
+                        advanced motor drives, including modulation,
                         energy management, capacitor-voltage control,
-                        circulating-current control, and high-performance
-                        converter hardware.
+                        circulating-current control, and
+                        high-power-density converter design.
 
                     </p>
 
@@ -415,7 +483,7 @@
 
 
 
-            <!-- Topic 03 -->
+            <!-- 03 WBG -->
 
             <div class="topic-card">
 
@@ -437,9 +505,9 @@
 
                         High-frequency and high-power-density converter
                         technologies based on GaN and SiC semiconductor
-                        devices, with emphasis on converter hardware,
-                        switching performance, thermal design, and
-                        system-level integration.
+                        devices, focusing on converter hardware,
+                        switching performance, thermal design,
+                        and system integration.
 
                     </p>
 
@@ -449,12 +517,12 @@
 
 
 
-            <!-- Topic 04 -->
+            <!-- 04 Control -->
 
             <div class="topic-card">
 
                 <img
-                    src="./images/facilities/control.png"
+                    src="./images/facilities/controller.jpg"
                     alt="Advanced Control">
 
                 <div class="topic-content">
@@ -469,11 +537,11 @@
 
                     <p>
 
-                        Advanced control methods for power converters
-                        and electrical machines, including model
-                        predictive control, model-free control,
-                        sensorless control, grid-forming control,
-                        and advanced modulation techniques.
+                        Advanced control and real-time implementation
+                        for power converters and electrical machines,
+                        including predictive control, sensorless control,
+                        model-free control, grid-forming control,
+                        and advanced modulation.
 
                     </p>
 
@@ -486,7 +554,9 @@
 
 
 
-        <!-- Research Platform -->
+        <!-- =====================================
+             Research Platform
+        ====================================== -->
 
         <div class="research-platform">
 
@@ -496,60 +566,40 @@
             </h2>
 
 
-            <div class="platform-layout">
+            <div class="platform-main">
 
 
-                <div>
-
-                    <img
-                        src="./images/facilities/controller.jpg"
-                        alt="Power Electronics Experimental Platform">
-
-                </div>
+                <img
+                    src="./images/facilities/Platform.png"
+                    alt="ICON Research Platform">
 
 
-                <div class="platform-text">
+                <div class="platform-description">
 
                     <h3>
-                        Experimental Power Electronics Platform
+                        Integrated Power Electronics
+                        and Motor-Drive Research Platform
                     </h3>
+
 
                     <p>
 
-                        The research team maintains experimental platforms
-                        for power converter development, electrical-machine
-                        control, and advanced modulation and control research.
+                        The ICON Research Team maintains an integrated
+                        experimental platform for the development and
+                        validation of advanced power converters,
+                        modular multilevel converters, electrical-machine
+                        drives, and real-time control technologies.
 
                     </p>
 
+                    <p>
 
-                    <ul class="platform-list">
+                        The platform integrates programmable power supplies,
+                        GaN and SiC converter prototypes, Imperix real-time
+                        controllers, PMSM test benches, load converters,
+                        and high-bandwidth measurement equipment.
 
-                        <li>
-                            Imperix B-Box real-time control platforms
-                        </li>
-
-                        <li>
-                            GaN and SiC power converter prototypes
-                        </li>
-
-                        <li>
-                            Modular multilevel converter test benches
-                        </li>
-
-                        <li>
-                            PMSM motor-drive test benches
-                        </li>
-
-                        <li>
-                            Programmable DC power supplies and electronic loads
-                        </li>
-
-                        <li>
-                            High-bandwidth measurement and oscilloscope systems
-                        </li>
-
-                    </ul>
+                    </p>
 
                 </div>
 
@@ -558,17 +608,66 @@
 
 
 
-            <div class="secondary-platform">
+            <!-- Additional experimental facilities -->
+
+            <h2 class="facility-title">
+                Experimental Facilities
+            </h2>
 
 
-                <img
-                    src="./images/facilities/ev1.jpg"
-                    alt="Motor Drive Experimental Platform">
+            <div class="facility-grid">
 
 
-                <img
-                    src="./images/facilities/Platform.png"
-                    alt="MMC Experimental Platform">
+                <div class="facility-card">
+
+                    <img
+                        src="./images/facilities/ev1.jpg"
+                        alt="EV and Aerospace Experimental Platform">
+
+
+                    <div class="facility-content">
+
+                        <h3>
+                            Electrified Propulsion Test Platform
+                        </h3>
+
+                        <p>
+                            Experimental platform for advanced
+                            electrical-machine drives,
+                            propulsion control,
+                            and transportation electrification research.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="facility-card">
+
+                    <img
+                        src="./images/facilities/converter.jpg"
+                        alt="Power Converter Experimental Platform">
+
+
+                    <div class="facility-content">
+
+                        <h3>
+                            Power Converter Test Platform
+                        </h3>
+
+                        <p>
+                            Experimental hardware platform for
+                            GaN and SiC converter development,
+                            power-density enhancement,
+                            switching-performance investigation,
+                            and converter validation.
+                        </p>
+
+                    </div>
+
+                </div>
 
 
             </div>
@@ -585,7 +684,7 @@
 
 <footer>
 
-    ICON Research Team · VER 8
+    ICON Research Team · VER 10
 
 </footer>
 
