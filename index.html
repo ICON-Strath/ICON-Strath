@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>People | ICON Research Team</title>
+    <title>ICON Research Team</title>
 
     <style>
 
@@ -16,7 +16,7 @@
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            color: #1d1d1f;
+            color: #1f1f1f;
             background: #ffffff;
         }
 
@@ -26,19 +26,19 @@
 
         header {
             height: 76px;
-            border-bottom: 1px solid #e5e5e5;
-
             display: flex;
             align-items: center;
             justify-content: space-between;
 
             padding: 0 7%;
 
-            background: white;
+            border-bottom: 1px solid #e5e5e5;
+
+            background: #ffffff;
         }
 
         .logo img {
-            height: 55px;
+            height: 52px;
             width: auto;
             display: block;
         }
@@ -47,96 +47,126 @@
             text-decoration: none;
             color: #222;
 
-            margin-left: 28px;
+            margin-left: 26px;
 
             font-size: 15px;
         }
 
         nav a:hover {
-            color: #1d58a7;
+            color: #1f5fae;
         }
 
 
         /* =========================
-           Page Header
+           Hero
         ========================= */
 
-        .page-header {
+        .hero {
+            min-height: 520px;
+
+            display: flex;
+            align-items: center;
+
+            padding: 70px 8%;
+
             background: #f5f7fa;
-            padding: 70px 7% 55px;
         }
 
-        .page-header h1 {
-            font-size: 44px;
-            margin: 0 0 12px;
+        .hero-content {
+            max-width: 760px;
         }
 
-        .page-header p {
+        .hero h1 {
+            margin: 0 0 22px;
+
+            font-size: 54px;
+
+            line-height: 1.1;
+        }
+
+        .hero p {
             margin: 0;
-            color: #666;
-            font-size: 18px;
+
+            font-size: 21px;
+
+            line-height: 1.7;
+
+            color: #555;
+        }
+
+        .hero-buttons {
+            margin-top: 32px;
+        }
+
+        .button {
+            display: inline-block;
+
+            text-decoration: none;
+
+            padding: 12px 22px;
+
+            margin-right: 12px;
+
+            border-radius: 4px;
+
+            font-size: 15px;
+        }
+
+        .button-primary {
+            background: #1f5fae;
+            color: white;
+        }
+
+        .button-secondary {
+            border: 1px solid #1f5fae;
+            color: #1f5fae;
         }
 
 
         /* =========================
-           People Section
+           Research Areas
         ========================= */
 
-        .people-section {
+        .research {
             width: 86%;
-            max-width: 1250px;
+            max-width: 1200px;
 
-            margin: 70px auto 100px;
+            margin: 0 auto;
+
+            padding: 85px 0;
         }
 
-        .people-grid {
+        .research h2 {
+            text-align: center;
+
+            font-size: 34px;
+
+            margin-bottom: 45px;
+        }
+
+        .research-grid {
             display: grid;
 
             grid-template-columns:
                 repeat(4, 1fr);
 
-            gap: 45px 32px;
+            gap: 25px;
         }
 
-        .person-card {
+        .research-card {
+            padding: 30px 24px;
+
+            border: 1px solid #e5e5e5;
+
             text-align: center;
+
+            background: white;
         }
 
-        .person-card img {
-            width: 100%;
-            aspect-ratio: 4 / 5;
-
-            object-fit: cover;
-
-            border-radius: 6px;
-
-            background: #f2f2f2;
-        }
-
-        .person-card h2 {
-            margin: 18px 0 6px;
-
-            font-size: 21px;
-        }
-
-        .role {
-            font-size: 14px;
-
-            font-weight: 600;
-
-            color: #1d58a7;
-
-            margin-bottom: 10px;
-        }
-
-        .topic {
-            font-size: 15px;
-
-            line-height: 1.55;
-
-            color: #555;
-
+        .research-card h3 {
             margin: 0;
+
+            font-size: 19px;
         }
 
 
@@ -147,9 +177,9 @@
         footer {
             border-top: 1px solid #e5e5e5;
 
-            padding: 35px 7%;
-
             text-align: center;
+
+            padding: 32px;
 
             color: #777;
 
@@ -158,12 +188,12 @@
 
 
         /* =========================
-           Responsive
+           Mobile
         ========================= */
 
-        @media (max-width: 1000px) {
+        @media (max-width: 900px) {
 
-            .people-grid {
+            .research-grid {
                 grid-template-columns:
                     repeat(2, 1fr);
             }
@@ -174,31 +204,41 @@
         @media (max-width: 650px) {
 
             header {
-                flex-direction: column;
-
                 height: auto;
+
+                flex-direction: column;
 
                 padding: 18px;
             }
 
             nav {
-                margin-top: 15px;
+                margin-top: 14px;
+
+                text-align: center;
             }
 
             nav a {
-                margin: 0 8px;
-
                 display: inline-block;
 
-                margin-bottom: 8px;
+                margin: 6px 8px;
             }
 
-            .people-grid {
+            .hero {
+                min-height: 430px;
+
+                padding: 55px 8%;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .research-grid {
                 grid-template-columns: 1fr;
-            }
-
-            .page-header h1 {
-                font-size: 34px;
             }
 
         }
@@ -243,184 +283,64 @@
 
 
 
-<section class="page-header">
+<section class="hero">
 
-    <h1>People</h1>
+    <div class="hero-content">
 
-    <p>
-        Members of the ICON Research Team
-    </p>
+        <h1>
+            Intelligent Power Converter Research Team
+        </h1>
+
+        <p>
+            Our team develops advanced power electronics and drive
+            technologies for transportation electrification, including
+            EV and aerospace motor drives, wireless power transfer,
+            and DC–DC power conversion, with the long-term goal of
+            enabling highly efficient and sustainable energy systems.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#research" class="button button-primary">
+                Explore Research
+            </a>
+
+            <a href="people.html" class="button button-secondary">
+                Meet the Team
+            </a>
+
+        </div>
+
+    </div>
 
 </section>
 
 
 
-<section class="people-section">
+<section class="research" id="research">
 
-    <div class="people-grid">
+    <h2>
+        Research Areas
+    </h2>
 
 
-        <div class="person-card">
+    <div class="research-grid">
 
-            <img
-                src="images/people/Xinyuan.jpg"
-                alt="Xin Yuan">
-
-            <h2>Xin Yuan</h2>
-
-            <div class="role">
-                Principal Investigator
-            </div>
-
-            <p class="topic">
-                Power converters and motor drives
-            </p>
-
+        <div class="research-card">
+            <h3>EV & Aerospace Drives</h3>
         </div>
 
-
-
-        <div class="person-card">
-
-            <img
-                src="images/people/Chaotang.jpg"
-                alt="Chao Tang">
-
-            <h2>Chao Tang</h2>
-
-            <div class="role">
-                PhD Researcher
-            </div>
-
-            <p class="topic">
-                GaN-based modular multilevel converter
-                hardware design and modulation
-            </p>
-
+        <div class="research-card">
+            <h3>Power Converters</h3>
         </div>
 
-
-
-        <div class="person-card">
-
-            <img
-                src="images/people/Quanqiangliu.jpg"
-                alt="Quanqiang Liu">
-
-            <h2>Quanqiang Liu</h2>
-
-            <div class="role">
-                PhD Researcher
-            </div>
-
-            <p class="topic">
-                Model predictive motor control
-            </p>
-
+        <div class="research-card">
+            <h3>Wireless Power Transfer</h3>
         </div>
 
-
-
-        <div class="person-card">
-
-            <img
-                src="images/people/Ruixinluo.jpg"
-                alt="Ruixin Luo">
-
-            <h2>Ruixin Luo</h2>
-
-            <div class="role">
-                PhD Researcher
-            </div>
-
-            <p class="topic">
-                Model predictive control
-                for modular multilevel converters
-            </p>
-
+        <div class="research-card">
+            <h3>Advanced Control</h3>
         </div>
-
-
-
-        <div class="person-card">
-
-            <img
-                src="images/people/Xiaotianxie.jpg"
-                alt="Xiaotian Xie">
-
-            <h2>Xiaotian Xie</h2>
-
-            <div class="role">
-                PhD Researcher
-            </div>
-
-            <p class="topic">
-                Sensorless control and
-                model-free motor control
-            </p>
-
-        </div>
-
-
-
-        <div class="person-card">
-
-            <img
-                src="images/people/Haoransong.jpg"
-                alt="Haoran Song">
-
-            <h2>Haoran Song</h2>
-
-            <div class="role">
-                Visiting PhD Researcher
-            </div>
-
-            <p class="topic">
-                Grid-forming converters
-            </p>
-
-        </div>
-
-
-
-        <div class="person-card">
-
-            <img
-                src="images/people/Junkaiwen.jpg"
-                alt="Junkai Wen">
-
-            <h2>Junkai Wen</h2>
-
-            <div class="role">
-                PhD Graduate
-            </div>
-
-            <p class="topic">
-                Current control for PMSM drives
-            </p>
-
-        </div>
-
-
-
-        <div class="person-card">
-
-            <img
-                src="images/people/Xiaomeitang.jpg"
-                alt="Xiaomei Tang">
-
-            <h2>Xiaomei Tang</h2>
-
-            <div class="role">
-                PhD Graduate
-            </div>
-
-            <p class="topic">
-                Motor drives and control
-            </p>
-
-        </div>
-
 
     </div>
 
