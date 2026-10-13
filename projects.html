@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Projects | ICON Research Team | VER 15</title>
+
+    <link rel="stylesheet" href="./css/style.css?v=12">
+
+
+    <style>
+
+        /* =========================
+           Projects Page
+        ========================= */
+
+        .project-intro {
+            max-width: 900px;
+            margin-bottom: 50px;
+        }
+
+        .project-intro p {
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+
+        .project-list {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+
+        .project-card {
+            border: 1px solid #e1e6ec;
+            border-radius: 10px;
+            background: #ffffff;
+
+            padding: 34px;
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+
+        .project-card:hover {
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 12px 30px
+                rgba(0,0,0,0.07);
+        }
+
+
+        .project-status {
+            display: inline-block;
+
+            padding: 5px 11px;
+
+            margin-bottom: 15px;
+
+            border-radius: 4px;
+
+            background: #eaf7ee;
+
+            color: #16813d;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            letter-spacing: 0.8px;
+        }
+
+
+        .project-card h2 {
+            margin: 0 0 14px;
+
+            font-size: 27px;
+
+            line-height: 1.35;
+
+            color: #12376b;
+        }
+
+
+        .project-meta {
+            margin-bottom: 20px;
+
+            color: #667085;
+
+            font-size: 15px;
+        }
+
+
+        .project-description {
+            max-width: 950px;
+
+            margin-bottom: 24px;
+
+            font-size: 17px;
+
+            line-height: 1.8;
+
+            color: #4b5563;
+        }
+
+
+        .project-info {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, minmax(0, 1fr));
+
+            gap: 20px;
+
+            margin-top: 28px;
+
+            padding-top: 24px;
+
+            border-top: 1px solid #e5e7eb;
+        }
+
+
+        .project-info-box {
+            background: #f7f9fc;
+
+            border-radius: 6px;
+
+            padding: 18px;
+        }
+
+
+        .project-info-label {
+            font-size: 12px;
+
+            font-weight: 700;
+
+            letter-spacing: 1px;
+
+            color: #1565b8;
+
+            margin-bottom: 5px;
+        }
+
+
+        .project-info-value {
+            font-size: 16px;
+
+            color: #253046;
+        }
+
+
+        .project-links {
+            margin-top: 24px;
+        }
+
+
+        .project-link {
+            display: inline-block;
+
+            margin-right: 10px;
+
+            padding: 9px 15px;
+
+            border-radius: 4px;
+
+            text-decoration: none;
+
+            background: #f4f7fb;
+
+            color: #1565b8;
+
+            font-size: 14px;
+
+            font-weight: 600;
+        }
+
+
+        .project-link:hover {
+            background: #e6eef8;
+        }
+
+
+        @media (max-width: 800px) {
+
+            .project-info {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="logo">
+
+        <a href="./index.html">
+
+            <img
+                src="./images/logo/logo.png"
+                alt="ICON Research Team">
+
+        </a>
+
+    </div>
+
+
+    <nav>
+
+        <a href="./index.html">Home</a>
+
+        <a href="./research.html">Research</a>
+
+        <a href="./people.html">People</a>
+
+        <a href="./publications.html">Publications</a>
+
+        <a href="./projects.html">Projects</a>
+
+        <a href="#">Facilities</a>
+
+        <a href="#">News</a>
+
+        <a href="./contact.html">Contact</a>
+
+    </nav>
+
+</header>
+
+
+
+<section class="page-header">
+
+    <h1>
+        Projects
+    </h1>
+
+    <p>
+        Selected funded research projects led by the ICON Research Team.
+    </p>
+
+</section>
+
+
+
+<section class="section">
+
+    <div class="container">
+
+
+        <p class="version-badge">
+            PROJECTS · VER 15
+        </p>
+
+
+        <div class="project-intro">
+
+            <h2>
+                Current Research Projects
+            </h2>
+
+            <p>
+                Our research projects focus on advanced power conversion,
+                modular multilevel converters, wide-bandgap devices,
+                model predictive control, and high-performance motor-drive systems.
+            </p>
+
+        </div>
+
+
+
+        <div class="project-list">
+
+
+            <article class="project-card">
+
+
+                <div class="project-status">
+                    ACTIVE PROJECT
+                </div>
+
+
+                <h2>
+                    Investigation of Model Predictive Control
+                    in SiC-Based Modular Multilevel Converter
+                </h2>
+
+
+                <div class="project-meta">
+                    Principal Investigator: Dr Xin Yuan
+                </div>
+
+
+                <p class="project-description">
+
+                    This project investigates a novel model predictive
+                    control strategy for SiC-based half-bridge modular
+                    multilevel converters, with particular emphasis on
+                    reducing the parameter sensitivity of model predictive
+                    control.
+
+                </p>
+
+
+                <p class="project-description">
+
+                    The research targets medium-voltage motor-drive
+                    applications and aims to contribute to improved
+                    energy efficiency, reduced system cost, and improved
+                    environmental sustainability through advanced converter
+                    control and wide-bandgap power electronics.
+
+                </p>
+
+
+
+                <div class="project-info">
+
+
+                    <div class="project-info-box">
+
+                        <div class="project-info-label">
+                            PRINCIPAL INVESTIGATOR
+                        </div>
+
+                        <div class="project-info-value">
+                            Dr Xin Yuan
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="project-info-box">
+
+                        <div class="project-info-label">
+                            FUNDER
+                        </div>
+
+                        <div class="project-info-value">
+                            Royal Society
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="project-info-box">
+
+                        <div class="project-info-label">
+                            FUNDING
+                        </div>
+
+                        <div class="project-info-value">
+                            £30,000
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="project-links">
+
+
+                    <a
+                        class="project-link"
+                        href="https://pureportal.strath.ac.uk/en/projects/investigation-of-model-predictive-control-in-sic-based-modular-mu/"
+                        target="_blank"
+                        rel="noopener">
+
+                        Project Details
+
+                    </a>
+
+
+                    <a
+                        class="project-link"
+                        href="https://www.strath.ac.uk/staff/yuanxindr/"
+                        target="_blank"
+                        rel="noopener">
+
+                        PI Profile
+
+                    </a>
+
+
+                </div>
+
+
+            </article>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<footer>
+
+    ICON Research Team · VER 15
+
+</footer>
+
+
+</body>
+
+</html>
