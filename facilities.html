@@ -8,7 +8,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>Facilities | ICON Research Team | VER 16</title>
+    <title>Facilities | ICON Research Team | VER 17</title>
 
     <link rel="stylesheet" href="./css/style.css?v=12">
 
@@ -206,8 +206,69 @@
 
 
         /* =========================================
+           Equipment Highlights
+        ========================================= */
+
+        .equipment-section {
+            margin-top: 80px;
+        }
+
+        .equipment-section h2 {
+            margin-bottom: 16px;
+        }
+
+        .equipment-intro {
+            max-width: 950px;
+            margin-bottom: 35px;
+        }
+
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .equipment-card {
+            border: 1px solid #e2e7ee;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #ffffff;
+        }
+
+        .equipment-card img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .equipment-content {
+            padding: 22px 24px;
+        }
+
+        .equipment-content h3 {
+            margin: 0 0 10px;
+            font-size: 20px;
+            color: #12376b;
+        }
+
+        .equipment-content p {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.75;
+            color: #5b6472;
+        }
+
+
+        /* =========================================
            Responsive
         ========================================= */
+
+        @media (max-width: 1000px) {
+            .equipment-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
 
         @media (max-width: 850px) {
 
@@ -223,11 +284,16 @@
                 padding: 30px;
             }
 
+            .equipment-grid {
+                grid-template-columns: 1fr;
+            }
+
         }
 
     </style>
 
 </head>
+
 
 
 <body>
@@ -271,6 +337,7 @@
 </header>
 
 
+
 <section class="page-header">
 
     <h1>
@@ -285,14 +352,16 @@
 </section>
 
 
+
 <section class="section">
 
     <div class="container">
 
 
         <p class="version-badge">
-            FACILITIES · VER 16
+            FACILITIES · VER 17
         </p>
+
 
 
         <!-- =========================================
@@ -307,26 +376,23 @@
 
 
             <p>
-
                 The Driving the Electric Revolution Industrialisation
                 Centres (DER-IC) equipment in Scotland is housed across
                 two industry-led research and development facilities:
                 PNDC and the National Manufacturing Institute Scotland
                 (NMIS), both part of the University of Strathclyde.
-
             </p>
 
 
             <p>
-
                 Together, these facilities provide advanced capabilities
                 for the development, testing, validation, manufacturing,
                 and industrialisation of next-generation power electronics,
                 electrical machines, drives, and energy technologies.
-
             </p>
 
         </div>
+
 
 
         <!-- =========================================
@@ -334,7 +400,6 @@
         ========================================== -->
 
         <section class="major-facility">
-
 
             <div class="major-facility-image">
 
@@ -347,155 +412,110 @@
 
             <div class="major-facility-content">
 
-
                 <div class="facility-label">
                     MW-SCALE TESTING & VALIDATION
                 </div>
-
 
                 <h2>
                     PNDC / ANZIC
                 </h2>
 
-
                 <p>
-
                     PNDC and ANZIC specialise in de-risking
                     and accelerating the commercialisation of innovative
                     MW-scale technologies and architectures through
                     advanced testing, validation, real-world hardware,
                     and simulation capabilities.
-
                 </p>
 
-
                 <p>
-
                     The facilities support technology development from
                     component and subsystem level through to complete
                     system verification, working across industry,
                     academia, and policy-making organisations.
-
                 </p>
 
 
                 <div class="capability-grid">
 
-
                     <div class="capability-card">
-
                         <h3>
                             MW-Rated Dynamometers
                         </h3>
-
                         <p>
-
                             Two 1 MW dynamometer systems with switchable
                             torque and speed ranges and comprehensive
                             data-acquisition capability for testing
                             aviation, maritime, rail, and heavy-duty
                             vehicle powertrains.
-
                         </p>
-
                     </div>
 
-
                     <div class="capability-card">
-
                         <h3>
                             MW-Scale AC & DC Power Supplies
                         </h3>
-
                         <p>
-
                             1 MVA four-quadrant power supplies capable
                             of AC and DC operation, including three-phase
                             and single-phase AC operation, with combined
                             capability of up to approximately 2 MW
                             and 3 kV DC.
-
                         </p>
-
                     </div>
 
-
                     <div class="capability-card">
-
                         <h3>
                             Power Hardware-in-the-Loop
                         </h3>
-
                         <p>
-
                             Multi-MW Power Hardware-in-the-Loop capability
                             enables realistic system-level validation,
                             including controlled electrical fault testing.
-
                         </p>
-
                     </div>
 
-
                     <div class="capability-card">
-
                         <h3>
                             Environmental Testing
                         </h3>
-
                         <p>
-
                             Environmental chamber testing can be combined
                             with significant power hardware to evaluate
                             power electronics, machines, and drives under
                             controlled temperature and humidity conditions.
-
                         </p>
-
                     </div>
 
-
                     <div class="capability-card">
-
                         <h3>
                             Multi-MW Energy Systems
                         </h3>
-
                         <p>
-
                             The facilities complement PNDC's existing
                             multi-MW whole-system capabilities across
                             power, heat, and transport applications.
-
                         </p>
-
                     </div>
 
-
                     <div class="capability-card">
-
                         <h3>
                             Hydrogen Infrastructure
                         </h3>
-
                         <p>
-
                             Gaseous hydrogen supply supports testing
                             and development for power, heat, transport,
                             aerospace, rail, and heavy-duty vehicle
                             applications.
-
                         </p>
-
                     </div>
 
-
                 </div>
-
 
             </div>
 
         </section>
+
 
 
         <!-- =========================================
@@ -503,7 +523,6 @@
         ========================================== -->
 
         <section class="major-facility">
-
 
             <div class="major-facility-image">
 
@@ -516,51 +535,40 @@
 
             <div class="major-facility-content">
 
-
                 <div class="facility-label">
                     ADVANCED MANUFACTURING & INDUSTRIALISATION
                 </div>
-
 
                 <h2>
                     National Manufacturing Institute Scotland
                 </h2>
 
-
                 <p>
-
                     The National Manufacturing Institute Scotland
                     (NMIS) is an innovation partner for manufacturers,
                     supporting industry in developing, scaling, and
                     industrialising advanced technologies.
-
                 </p>
 
-
                 <p>
-
                     NMIS works with industrial and academic partners
                     to accelerate manufacturing innovation, improve
                     productivity, reduce development risk, and support
                     the transition towards more sustainable manufacturing.
-
                 </p>
 
-
                 <p>
-
                     Its expanding semiconductor packaging capability
                     provides manufacturers with access to advanced
                     packaging technologies, supporting the development
                     and industrialisation of future power electronic
                     systems and semiconductor-based products.
-
                 </p>
-
 
             </div>
 
         </section>
+
 
 
         <!-- =========================================
@@ -569,40 +577,32 @@
 
         <section class="support-section">
 
-
             <div class="facility-label">
                 INDUSTRIAL RESEARCH PARTNERSHIP
             </div>
-
 
             <h2>
                 Rolls-Royce University Technology Centre
                 in Electrical Power Systems
             </h2>
 
-
             <p>
-
                 Established in 1997, the Rolls-Royce University
                 Technology Centre in Electrical Power Systems
                 conducts research and development into advanced
                 electrical power-system technologies.
-
             </p>
 
-
             <p>
-
                 The Centre provides strategic and applied research
                 supporting Rolls-Royce activities across aerospace,
                 marine, energy, and electrical systems, strengthening
                 the connection between fundamental research and
                 industrial technology development.
-
             </p>
 
-
         </section>
+
 
 
         <!-- =========================================
@@ -615,9 +615,7 @@
                 Supporting the Energy Transition
             </h2>
 
-
             <p>
-
                 The combined research infrastructure provides
                 large-scale capabilities for technologies enabling
                 the energy transition. This includes multi-MW electrical
@@ -626,8 +624,119 @@
                 Power Hardware-in-the-Loop, and hydrogen infrastructure
                 supporting the decarbonisation of aerospace, rail,
                 heavy-duty transport, heat, and industrial energy systems.
-
             </p>
+
+        </div>
+
+
+
+        <!-- =========================================
+             EQUIPMENT HIGHLIGHTS
+        ========================================== -->
+
+        <div class="equipment-section">
+
+            <h2>
+                Laboratory Equipment Highlights
+            </h2>
+
+            <p class="equipment-intro">
+                In addition to large-scale external facilities, the ICON
+                Research Team uses a range of laboratory equipment for
+                converter prototyping, real-time simulation, electrical
+                testing, measurement, and validation.
+            </p>
+
+
+            <div class="equipment-grid">
+
+                <div class="equipment-card">
+                    <img
+                        src="./images/facilities/facilities3.jpg"
+                        alt="Tektronix Oscilloscope and Measurement System">
+                    <div class="equipment-content">
+                        <h3>
+                            Tektronix Oscilloscope and Measurement System
+                        </h3>
+                        <p>
+                            High-bandwidth measurement equipment used for
+                            waveform observation, switching analysis,
+                            signal verification, and converter testing.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="equipment-card">
+                    <img
+                        src="./images/facilities/facilities4.jpg"
+                        alt="Tektronix Digital Oscilloscope">
+                    <div class="equipment-content">
+                        <h3>
+                            Tektronix Digital Oscilloscope
+                        </h3>
+                        <p>
+                            Digital oscilloscope platform supporting
+                            laboratory validation, control debugging,
+                            and electrical signal measurement in
+                            power-electronic experiments.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="equipment-card">
+                    <img
+                        src="./images/facilities/facilities5.jpg"
+                        alt="Micsig Tablet Oscilloscope">
+                    <div class="equipment-content">
+                        <h3>
+                            Micsig Tablet Oscilloscope
+                        </h3>
+                        <p>
+                            Portable oscilloscope for convenient
+                            measurement, diagnostic work, and flexible
+                            experimental waveform capture.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="equipment-card">
+                    <img
+                        src="./images/facilities/facilities6.jpg"
+                        alt="Plexim RT Box 3">
+                    <div class="equipment-content">
+                        <h3>
+                            Plexim RT Box 3
+                        </h3>
+                        <p>
+                            Real-time simulation platform used for
+                            rapid-control prototyping, Hardware-in-the-Loop
+                            studies, and validation of control algorithms.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="equipment-card">
+                    <img
+                        src="./images/facilities/facilities7.jpg"
+                        alt="Programmable Power Supply and Electronic Load Platform">
+                    <div class="equipment-content">
+                        <h3>
+                            Programmable Power Supply and Electronic Load Platform
+                        </h3>
+                        <p>
+                            Laboratory power interface equipment for
+                            converter testing, controlled loading,
+                            system energisation, and experimental
+                            validation of power-electronic hardware.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
 
         </div>
 
@@ -637,9 +746,10 @@
 </section>
 
 
+
 <footer>
 
-    ICON Research Team · VER 16
+    ICON Research Team · VER 17
 
 </footer>
 
